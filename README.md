@@ -1,5 +1,15 @@
 # Roboticon
 
+## Getting Started
+
+```
+npm install
+```
+
+```
+npm start
+```
+
 ## Instructions
 
 `M:` Move forward
