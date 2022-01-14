@@ -1,5 +1,13 @@
+import { INITIAL_COORDINATES } from "../src/constants";
 import { generateNewRobot, moveRobot } from "../src/robot";
 import { MovementCommand, Robot } from "../src/types/types";
+
+describe("generateNewRobot", () => {
+  const newRobot = generateNewRobot();
+  expect(newRobot.x).toEqual(INITIAL_COORDINATES.x);
+  expect(newRobot.y).toEqual(INITIAL_COORDINATES.y);
+  expect(newRobot.direction.current()).toEqual(INITIAL_COORDINATES.direction);
+});
 
 describe("moveRobot", () => {
   let robot: Robot;

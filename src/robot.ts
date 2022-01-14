@@ -1,6 +1,10 @@
 import { Circular } from "./Circular";
-import { DirectionCommand, MovementCommand, Robot } from "./types/types";
-type Direction = "north" | "west" | "east" | "south";
+import {
+  Direction,
+  DirectionCommand,
+  MovementCommand,
+  Robot,
+} from "./types/types";
 
 const movementMap: {
   [key in Direction]: (robot: Robot) => { x: number; y: number };

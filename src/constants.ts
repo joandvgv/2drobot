@@ -4,3 +4,9 @@ export const WELCOME_TEXT =
   "Hello, welcome to Roboticon - follow the instructions below and have fun😄";
 
 export const SUPPORTED_KEYS = ["L", "R", "M", "Q", "?"];
+
+export const INITIAL_COORDINATES = {
+  x: 0,
+  y: 0,
+  direction: "north",
+};
